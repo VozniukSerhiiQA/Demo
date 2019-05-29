@@ -14,7 +14,6 @@ import java.util.concurrent.TimeUnit;
 public class Hook {
 
     public static WebDriver driver;
-    //String url = "http://automationpractice.com/index.php";
 
     @Before
     public void Start() {
@@ -30,7 +29,7 @@ public class Hook {
             final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
             scenario.embed(screenshot, "image/png");
         }
-        driver.close();
+        //driver.close();
         System.out.println("\n" + "We are closing GC browser");
     }
 }

@@ -1,79 +1,86 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("HomePage.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("LoginPage.feature");
 formatter.feature({
   "line": 1,
   "name": "HomePage",
-  "description": "This feature deals with login functionality",
+  "description": "",
   "id": "homepage",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 8497093600,
+  "duration": 8212732600,
   "status": "passed"
 });
-formatter.scenario({
-  "line": 5,
-  "name": "Home Page check",
+formatter.background({
+  "line": 3,
+  "name": "Home Page verification, log in, new user creation.",
   "description": "",
-  "id": "homepage;home-page-check",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.scenario({
+  "line": 7,
+  "name": "Login Page check",
+  "description": "",
+  "id": "homepage;login-page-check",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 4,
+      "line": 6,
       "name": "@InProgress"
     }
   ]
 });
 formatter.step({
-  "line": 6,
+  "line": 8,
   "name": "Home Page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
-  "name": "footer is correct",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 8,
-  "name": "menu is correct",
-  "keyword": "Then "
-});
-formatter.step({
   "line": 9,
-  "name": "login is correct",
+  "name": "I navigate to Login page",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 10,
+  "name": "I see Create an account form",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 11,
+  "name": "I see Sign In form",
   "keyword": "Then "
 });
 formatter.match({
   "location": "HomePageSteps.homePage()"
 });
 formatter.result({
-  "duration": 5278211000,
+  "duration": 5141344300,
   "status": "passed"
 });
 formatter.match({
-  "location": "HomePageSteps.footerIsCorrect()"
+  "location": "HomePageSteps.iNavigateToLoginPage()"
 });
 formatter.result({
-  "duration": 24700,
+  "duration": 2201347300,
   "status": "passed"
 });
 formatter.match({
-  "location": "HomePageSteps.menuIsCorrect()"
+  "location": "LoginPageSteps.iSeeCreateAnAccountForm()"
 });
 formatter.result({
-  "duration": 19500,
+  "duration": 131579600,
   "status": "passed"
 });
 formatter.match({
-  "location": "HomePageSteps.loginIsCorrect()"
+  "location": "LoginPageSteps.iSeeSignInForm()"
 });
 formatter.result({
-  "duration": 21200,
+  "duration": 62945200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 262561600,
+  "duration": 155300,
   "status": "passed"
 });
 });

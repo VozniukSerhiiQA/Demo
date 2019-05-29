@@ -3,10 +3,17 @@
     "line": 1,
     "elements": [
       {
+        "line": 3,
+        "name": "Home Page verification, log in, new user creation.",
+        "description": "",
+        "type": "background",
+        "keyword": "Background"
+      },
+      {
         "before": [
           {
             "result": {
-              "duration": 8497093600,
+              "duration": 8212732600,
               "status": "passed"
             },
             "match": {
@@ -14,14 +21,14 @@
             }
           }
         ],
-        "line": 5,
-        "name": "Home Page check",
+        "line": 7,
+        "name": "Login Page check",
         "description": "",
-        "id": "homepage;home-page-check",
+        "id": "homepage;login-page-check",
         "after": [
           {
             "result": {
-              "duration": 262561600,
+              "duration": 155300,
               "status": "passed"
             },
             "match": {
@@ -34,10 +41,10 @@
         "steps": [
           {
             "result": {
-              "duration": 5278211000,
+              "duration": 5141344300,
               "status": "passed"
             },
-            "line": 6,
+            "line": 8,
             "name": "Home Page",
             "match": {
               "location": "HomePageSteps.homePage()"
@@ -46,53 +53,53 @@
           },
           {
             "result": {
-              "duration": 24700,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "footer is correct",
-            "match": {
-              "location": "HomePageSteps.footerIsCorrect()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 19500,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "menu is correct",
-            "match": {
-              "location": "HomePageSteps.menuIsCorrect()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 21200,
+              "duration": 2201347300,
               "status": "passed"
             },
             "line": 9,
-            "name": "login is correct",
+            "name": "I navigate to Login page",
             "match": {
-              "location": "HomePageSteps.loginIsCorrect()"
+              "location": "HomePageSteps.iNavigateToLoginPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 131579600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I see Create an account form",
+            "match": {
+              "location": "LoginPageSteps.iSeeCreateAnAccountForm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 62945200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I see Sign In form",
+            "match": {
+              "location": "LoginPageSteps.iSeeSignInForm()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 4,
+            "line": 6,
             "name": "@InProgress"
           }
         ]
       }
     ],
     "name": "HomePage",
-    "description": "This feature deals with login functionality",
+    "description": "",
     "id": "homepage",
     "keyword": "Feature",
-    "uri": "HomePage.feature"
+    "uri": "LoginPage.feature"
   }
 ]

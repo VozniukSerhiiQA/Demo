@@ -1,4 +1,4 @@
-package StepDeffinitions;
+package StepDefinitions;
 
 
 import cucumber.api.Scenario;
@@ -14,27 +14,14 @@ import java.util.concurrent.TimeUnit;
 public class Hook {
 
     public static WebDriver driver;
-    String url = "https://magento2.smarterspecies.com/";
+    //String url = "http://automationpractice.com/index.php";
 
     @Before
     public void Start() {
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        driver.get(url);
-        System.out.println("\n" + "We are opening new browser : GC");
-
-        // Storing URL in String variable
-        String actualUrl = driver.getCurrentUrl();
-
-        if (actualUrl.equals(url)){
-            System.out.println("Verification Successful - The correct Url is opened.");
-        }else{
-            System.out.println("Verification Failed - An incorrect Url is opened.");
-            //In case of Fail, you like to print the actual and expected URL for the record purpose
-            System.out.println("Actual URL is : " + actualUrl);
-            System.out.println("Expected URL is : " + url);
-        }
+        System.out.println("Start Hook");
     }
 
     @After

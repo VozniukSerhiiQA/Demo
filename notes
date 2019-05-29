@@ -1,0 +1,35 @@
+#  Scenario: Login with correct username and password
+#    Given I navigate to the login page
+#    And I enter next for log in
+#      | username     | password |
+#      | mage_gorilla | Monkey1  |
+#    Then I should the user form page
+
+
+
+////   Data Table with User Password
+//    @And("I enter next for log in")
+//    public void iEnterNextForLogIn(DataTable table) {
+//
+//        List<User> users = new ArrayList<User>();
+//        users = table.asList(User.class);
+//
+//        for (User user : users){
+//            System.out.println("The userName is "+user.username);
+//            System.out.println("The passWord is "+user.password);
+//        }
+//    }
+//
+//
+//
+//    public class User {
+//
+//        public String username;
+//        public String password;
+//
+//        public User(String userName, String passWord) {
+//            username = userName;
+//            password = passWord;
+//
+//        }
+//    }

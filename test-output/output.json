@@ -1,0 +1,98 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8497093600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.Start()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Home Page check",
+        "description": "",
+        "id": "homepage;home-page-check",
+        "after": [
+          {
+            "result": {
+              "duration": 262561600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.Stop(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5278211000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Home Page",
+            "match": {
+              "location": "HomePageSteps.homePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 24700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "footer is correct",
+            "match": {
+              "location": "HomePageSteps.footerIsCorrect()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 19500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "menu is correct",
+            "match": {
+              "location": "HomePageSteps.menuIsCorrect()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 21200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "login is correct",
+            "match": {
+              "location": "HomePageSteps.loginIsCorrect()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@InProgress"
+          }
+        ]
+      }
+    ],
+    "name": "HomePage",
+    "description": "This feature deals with login functionality",
+    "id": "homepage",
+    "keyword": "Feature",
+    "uri": "HomePage.feature"
+  }
+]

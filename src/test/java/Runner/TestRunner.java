@@ -10,7 +10,8 @@ import cucumber.api.CucumberOptions;
         format={"pretty","html:test-output","json:test-output/output.json"},
         features = "C:\\MyHome\\Demo\\src\\test\\java\\Features", //folder where features are located
         glue={"StepDefinitions"}  //folder for step definitions
-        ,tags = {"@InProgress"}
+        ,tags = {"@Ready"}
+        //,tags = {"@InProgress"}
 )
 
 public class TestRunner {

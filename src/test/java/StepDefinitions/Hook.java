@@ -29,7 +29,7 @@ public class Hook {
             final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
             scenario.embed(screenshot, "image/png");
         }
-        //driver.close();
+        driver.close();
         System.out.println("\n" + "We are closing GC browser");
     }
 }

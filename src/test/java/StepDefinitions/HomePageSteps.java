@@ -4,6 +4,7 @@ import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -18,6 +19,9 @@ public class HomePageSteps {
 
     String elemSignin = "//nav//a[contains(text(),'Sign in')]";
 
+    String Menu1 = "//div[@id='block_top_menu']//li/a[contains(text(),'Women')]";
+    String Menu2 = "//div[@id='block_top_menu']//li/a[contains(text(),'Dresses')]";
+    String Menu3 = "//div[@id='block_top_menu']//li/a[contains(text(),'T-shirts')]";
 
     @Given("^Home Page$")
     public void homePage() {
@@ -82,9 +86,7 @@ public class HomePageSteps {
     @Then("^menu is correct$")
     public void menuIsCorrect() {
 
-        String Menu1 = "//div[@id='block_top_menu']//li/a[contains(text(),'Women')]";
-        String Menu2 = "//div[@id='block_top_menu']//li/a[contains(text(),'Dresses')]";
-        String Menu3 = "//div[@id='block_top_menu']//li/a[contains(text(),'T-shirts')]";
+
 
         // Create instance of Javascript executor
         JavascriptExecutor je = (JavascriptExecutor) driver;
@@ -123,4 +125,18 @@ public class HomePageSteps {
     }
 
 
+    @When("^I click on \"([^\"]*)\" category$")
+    public void iClickOnCategory(String arg0){
+        if (arg0.equals("Women")) {
+            driver.findElement(By.xpath(Menu1)).click();
+
+        }
+        else if (arg0.equals("Dresses")) {
+            driver.findElement(By.xpath(Menu2)).click();
+        }
+        else {
+            Assert.fail("Error - wrong category");
+        }
+
+    }
 }

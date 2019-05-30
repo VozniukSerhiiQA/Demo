@@ -1,7 +1,5 @@
 Feature: LoginPage
 
-  Background: Log In feature.
-
   @Ready
   Scenario: Login Page check
     Given Home Page

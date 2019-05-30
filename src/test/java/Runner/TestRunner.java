@@ -10,8 +10,8 @@ import cucumber.api.CucumberOptions;
         format={"pretty","html:test-output","json:test-output/output.json"},
         features = "C:\\MyHome\\Demo\\src\\test\\java\\Features", //folder where features are located
         glue={"StepDefinitions"}  //folder for step definitions
-        ,tags = {"@Ready"}
-        //,tags = {"@InProgress"}
+        //,tags = {"@Ready"}
+        ,tags = {"@InProgress"}
 )
 
 public class TestRunner {
@@ -19,3 +19,4 @@ public class TestRunner {
 //        System.out.println(scenario.getName());
 //    }
 }
+//TODO: Create 2 Runner with different type of browser

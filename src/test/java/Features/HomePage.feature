@@ -1,5 +1,4 @@
 Feature: HomePage
-  Background: Home Page verification
 
   @Ready
   Scenario: Home Page check

@@ -1,5 +1,6 @@
 package StepDefinitions;
 
+import XPath.Breadcrumbs;
 import cucumber.api.java.en.Then;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,12 +12,10 @@ public class LoginPageSteps {
     public LoginPageSteps() {
         driver = Hook.driver;
     }
- //   breadcrumb
-    String breadcrumb1 = "//div/span[contains(text(),'Authentication')]";
 
     @Then("^I see Create an account form$")
     public void iSeeCreateAnAccountForm() {
-        driver.findElement(By.xpath(breadcrumb1)).isDisplayed();
+        driver.findElement(By.xpath(Breadcrumbs.Authentication)).isDisplayed();
         driver.findElement(By.id("SubmitCreate")).isDisplayed();
     }
 

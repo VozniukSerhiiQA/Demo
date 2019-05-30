@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 8553006000,
+  "duration": 10419217600,
   "status": "passed"
 });
 formatter.background({
@@ -18,69 +18,69 @@ formatter.background({
   "keyword": "Background"
 });
 formatter.scenario({
-  "line": 13,
-  "name": "Create new invalid user",
+  "line": 20,
+  "name": "Create new valid user",
   "description": "",
-  "id": "loginpage;create-new-invalid-user",
+  "id": "loginpage;create-new-valid-user",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 12,
+      "line": 19,
       "name": "@InProgress"
     }
   ]
 });
 formatter.step({
-  "line": 14,
+  "line": 21,
   "name": "Home Page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 15,
+  "line": 22,
   "name": "I navigate to Login page",
   "keyword": "When "
 });
 formatter.step({
-  "line": 16,
-  "name": "I create a user",
+  "line": 23,
+  "name": "I create valid user",
   "keyword": "And "
 });
 formatter.step({
-  "line": 17,
-  "name": "I see an alert of invalid user creation",
+  "line": 24,
+  "name": "I see My Account",
   "keyword": "Then "
 });
 formatter.match({
   "location": "HomePageSteps.homePage()"
 });
 formatter.result({
-  "duration": 16082138300,
+  "duration": 27006149600,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.iNavigateToLoginPage()"
 });
 formatter.result({
-  "duration": 5932614600,
+  "duration": 4702246300,
   "status": "passed"
 });
 formatter.match({
-  "location": "RegistrationPageSteps.iCreateAUser()"
+  "location": "RegistrationPageSteps.iCreateValidUser()"
 });
 formatter.result({
-  "duration": 15057916200,
+  "duration": 20541737700,
   "status": "passed"
 });
 formatter.match({
-  "location": "RegistrationPageSteps.iSeeAnAlertOfInvalidUserCreation()"
+  "location": "MyAccountPageSteps.iSeeMyAccount()"
 });
 formatter.result({
-  "duration": 321675100,
+  "duration": 1128965000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 128100,
+  "duration": 105600,
   "status": "passed"
 });
 });

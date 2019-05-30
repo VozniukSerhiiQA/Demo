@@ -23,8 +23,9 @@ public class RegistrationPageSteps {
         driver = Hook.driver;
     }
 
-    @And("^I create a user$")
-    public void iCreateAUser() {
+///////////////////// N O T    V A L I D   U S E R
+    @And("^I create an invalid user$")
+    public void iCreateAnInvalidUser() {
 
         //Get Date
         Date date = Calendar.getInstance().getTime();
@@ -81,7 +82,66 @@ public class RegistrationPageSteps {
 
 
     }
+///////////////////// V A L I D   U S E R
 
+    @And("^I create valid user$")
+    public void iCreateValidUser() {
+
+        //Get Date
+        Date date = Calendar.getInstance().getTime();
+        DateFormat dateFormat = new SimpleDateFormat("MMMddyyyyhhmmss");
+        String variable_date = dateFormat.format(date);
+        System.out.println(variable_date);
+
+        driver.findElement(By.id("email_create")).sendKeys("test+"+variable_date+"@grr.la");
+        driver.findElement(By.id("SubmitCreate")).click();
+        driver.findElement(By.id("id_gender1")).click();
+        driver.findElement(By.id("customer_firstname")).sendKeys("Serhii");
+        driver.findElement(By.id("customer_lastname")).sendKeys("Vozniuk");
+        driver.findElement(By.id("passwd")).sendKeys("SerhiiVozniuk");
+
+        Select drpDate = new Select(driver.findElement(By.id("days")));
+        drpDate.selectByValue("31");
+
+        Select drpMonths = new Select(driver.findElement(By.id("months")));
+        drpMonths.selectByValue("12");
+
+        Select drpYears = new Select(driver.findElement(By.id("years")));
+        drpYears.selectByValue("1986");
+
+        JavascriptExecutor je = (JavascriptExecutor) driver;
+        WebElement companyScroll = driver.findElement(By.id("company"));
+        // now execute query which actually will scroll until that element is not appeared on page.
+        je.executeScript("arguments[0].scrollIntoView(true);", companyScroll);
+        // Extract the text and verify
+        System.out.println(companyScroll.getText());
+
+        driver.findElement(By.id("firstname")).sendKeys("Serhii");
+        driver.findElement(By.id("lastname")).sendKeys("Serhii");
+        driver.findElement(By.id("company")).sendKeys("Autotester");
+        driver.findElement(By.id("address1")).sendKeys("Albany Ave");
+        driver.findElement(By.id("city")).sendKeys("Brooklyn");
+
+
+        WebElement phone_mobileScroll = driver.findElement(By.id("phone_mobile"));
+        // now execute query which actually will scroll until that element is not appeared on page.
+        je.executeScript("arguments[0].scrollIntoView(true);", phone_mobileScroll);
+        // Extract the text and verify
+        System.out.println(phone_mobileScroll.getText());
+
+
+        driver.findElement(By.id("postcode")).sendKeys("11214");
+        driver.findElement(By.id("phone_mobile")).sendKeys("1231231233");
+
+        driver.findElement(By.id("alias")).clear();
+        driver.findElement(By.id("alias")).sendKeys("Test address");
+
+        Select drpState = new Select(driver.findElement(By.id("id_state")));
+        drpState.selectByValue("32");
+        driver.findElement(By.id("submitAccount")).click();
+
+
+    }
 
 
     @Then("^I see an alert of invalid user creation$")

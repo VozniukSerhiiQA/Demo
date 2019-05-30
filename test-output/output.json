@@ -13,7 +13,7 @@
         "before": [
           {
             "result": {
-              "duration": 8553006000,
+              "duration": 10419217600,
               "status": "passed"
             },
             "match": {
@@ -21,14 +21,14 @@
             }
           }
         ],
-        "line": 13,
-        "name": "Create new invalid user",
+        "line": 20,
+        "name": "Create new valid user",
         "description": "",
-        "id": "loginpage;create-new-invalid-user",
+        "id": "loginpage;create-new-valid-user",
         "after": [
           {
             "result": {
-              "duration": 128100,
+              "duration": 105600,
               "status": "passed"
             },
             "match": {
@@ -41,10 +41,10 @@
         "steps": [
           {
             "result": {
-              "duration": 16082138300,
+              "duration": 27006149600,
               "status": "passed"
             },
-            "line": 14,
+            "line": 21,
             "name": "Home Page",
             "match": {
               "location": "HomePageSteps.homePage()"
@@ -53,10 +53,10 @@
           },
           {
             "result": {
-              "duration": 5932614600,
+              "duration": 4702246300,
               "status": "passed"
             },
-            "line": 15,
+            "line": 22,
             "name": "I navigate to Login page",
             "match": {
               "location": "HomePageSteps.iNavigateToLoginPage()"
@@ -65,32 +65,32 @@
           },
           {
             "result": {
-              "duration": 15057916200,
+              "duration": 20541737700,
               "status": "passed"
             },
-            "line": 16,
-            "name": "I create a user",
+            "line": 23,
+            "name": "I create valid user",
             "match": {
-              "location": "RegistrationPageSteps.iCreateAUser()"
+              "location": "RegistrationPageSteps.iCreateValidUser()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 321675100,
+              "duration": 1128965000,
               "status": "passed"
             },
-            "line": 17,
-            "name": "I see an alert of invalid user creation",
+            "line": 24,
+            "name": "I see My Account",
             "match": {
-              "location": "RegistrationPageSteps.iSeeAnAlertOfInvalidUserCreation()"
+              "location": "MyAccountPageSteps.iSeeMyAccount()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 12,
+            "line": 19,
             "name": "@InProgress"
           }
         ]

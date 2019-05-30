@@ -9,9 +9,9 @@ Feature: LoginPage
     Then I see Create an account form
     Then I see Sign In form
 
-  @InProgress
-  Scenario: Create new user
+  @Ready
+  Scenario: Create new invalid user
     Given Home Page
     When I navigate to Login page
     And I create a user
-    Then I see newly created user
+    Then I see an alert of invalid user creation

@@ -1,12 +1,9 @@
 package StepDefinitions;
 
-import cucumber.api.PendingException;
-import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+
 
 public class LoginPageSteps {
     WebDriver driver;
@@ -14,7 +11,6 @@ public class LoginPageSteps {
     public LoginPageSteps() {
         driver = Hook.driver;
     }
-
  //   breadcrumb
     String breadcrumb1 = "//div/span[contains(text(),'Authentication')]";
 
@@ -29,8 +25,4 @@ public class LoginPageSteps {
         driver.findElement(By.id("SubmitLogin")).isDisplayed();
     }
 
-    @And("^I create a user$")
-    public void iCreateAUser() {
-
-    }
 }

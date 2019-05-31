@@ -1,13 +1,15 @@
 package StepDefinitions;
 
-import XPath.Breadcrumbs;
+import locator.XPBreadcrumbs;
 import cucumber.api.java.en.Then;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import static locator.idObjects.*;
+
 
 public class LoginPageSteps {
-    WebDriver driver;
+    private WebDriver driver;
 
     public LoginPageSteps() {
         driver = Hook.driver;
@@ -15,13 +17,13 @@ public class LoginPageSteps {
 
     @Then("^I see Create an account form$")
     public void iSeeCreateAnAccountForm() {
-        driver.findElement(By.xpath(Breadcrumbs.Authentication)).isDisplayed();
-        driver.findElement(By.id("SubmitCreate")).isDisplayed();
+        driver.findElement(By.xpath(XPBreadcrumbs.Authentication)).isDisplayed();
+        driver.findElement(By.id(SubmitCreate)).isDisplayed();
     }
 
     @Then("^I see Sign In form$")
     public void iSeeSignInForm() {
-        driver.findElement(By.id("SubmitLogin")).isDisplayed();
+        driver.findElement(By.id(SubmitLogin)).isDisplayed();
     }
 
 }

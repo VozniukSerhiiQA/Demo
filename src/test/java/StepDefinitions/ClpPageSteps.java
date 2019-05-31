@@ -1,14 +1,13 @@
 package StepDefinitions;
 
-import XPath.Breadcrumbs;
-import cucumber.api.PendingException;
+import locator.XPBreadcrumbs;
 import cucumber.api.java.en.Then;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class ClpPageSteps {
 
-    WebDriver driver;
+   private WebDriver driver;
 
     public ClpPageSteps() {
         driver = Hook.driver;
@@ -17,7 +16,7 @@ public class ClpPageSteps {
 
     @Then("^I see CLP page$")
     public void iSeeCLPPage() {
-        driver.findElement(By.xpath(Breadcrumbs.Women)).isDisplayed();
+        driver.findElement(By.xpath(XPBreadcrumbs.Women)).isDisplayed();
 
     }
 }

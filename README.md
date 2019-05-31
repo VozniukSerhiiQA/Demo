@@ -8,5 +8,5 @@ Cucumber + Java
 - Change uncomment row #13 and comment #
 - Make sure all feature files has proper tag: Ready
 
-# Scoupe of current work
+# Scope of current work
 - In TODO list.

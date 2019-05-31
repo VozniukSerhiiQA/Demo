@@ -2,7 +2,7 @@ package locator;
 
 public class idObjects {
 
-    //Home Page
+    // ------------------------------------------------- Home Page
     public static String LinkContact = "contact-link";
     public static String SearchBox = "searchbox";
 
@@ -15,7 +15,7 @@ public class idObjects {
     public static String CreateEmail = "email_create";
     public static String SubmitBtnForNewUser = "SubmitCreate";
 
-    // Registration Page
+    // ------------------------------------------------- Registration Page
     public static String SelectGendrMr = "id_gender1";
     public static String NewPasswordCreation = "passwd";
     // ----Calendar
@@ -32,12 +32,5 @@ public class idObjects {
     public static String InputState = "id_state";
     public static String SubmitNewAccount = "submitAccount";
 
-
-
-
-
-
-//    public static String ContactLink = "contact-link";
-//    public static String ContactLink = "contact-link";
 
 }

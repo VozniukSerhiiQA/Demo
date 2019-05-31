@@ -8,5 +8,9 @@ Cucumber + Java
 - Change uncomment row #13 and comment #
 - Make sure all feature files has proper tag: Ready
 
+# Added 2 Runners to different labels:
+- Ready
+- InProgress
+
 # Scope of current work
 - In TODO list.

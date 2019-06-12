@@ -3,12 +3,12 @@ package StepDefinitions;
 import Methods.ScrollToElement;
 import locator.XPFooter;
 import locator.XPHeader;
+import Configuration.Params;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 import locator.XPMenu;
@@ -27,20 +27,18 @@ public class HomePageSteps {
     public void homePage() {
 
 
-        String url = "http://automationpractice.com/index.php";
-        driver.navigate().to(url);
-        //driver.get(url);
+        driver.navigate().to(Params.HomeUrl);
 
         // Storing URL in String variable
         String actualUrl = driver.getCurrentUrl();
 
-        if (actualUrl.equals(url)) {
+        if (actualUrl.equals(Params.HomeUrl)) {
             System.out.println("Verification Successful - The correct Url is opened.");
         } else {
             System.out.println("Verification Failed - An incorrect Url is opened.");
             //In case of Fail, you like to print the actual and expected URL for the record purpose
             System.out.println("Actual URL is : " + actualUrl);
-            System.out.println("Expected URL is : " + url);
+            System.out.println("Expected URL is : " + Params.HomeUrl);
         }
 
         driver.findElement(By.xpath(XPHeader.logo));

@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 8292941700,
+              "duration": 9344735600,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 191807300,
+              "duration": 352737900,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4170482400,
+              "duration": 4001330700,
               "status": "passed"
             },
             "line": 5,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 2303999700,
+              "duration": 1805181500,
               "status": "passed"
             },
             "line": 6,
@@ -64,7 +64,7 @@
           },
           {
             "result": {
-              "duration": 1094317800,
+              "duration": 937343500,
               "status": "passed"
             },
             "line": 7,
@@ -86,7 +86,7 @@
         "before": [
           {
             "result": {
-              "duration": 3781541200,
+              "duration": 3808956800,
               "status": "passed"
             },
             "match": {
@@ -101,7 +101,7 @@
         "after": [
           {
             "result": {
-              "duration": 249218800,
+              "duration": 161503800,
               "status": "passed"
             },
             "match": {
@@ -114,7 +114,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4006119100,
+              "duration": 3994958300,
               "status": "passed"
             },
             "line": 11,
@@ -126,7 +126,7 @@
           },
           {
             "result": {
-              "duration": 2238759900,
+              "duration": 1805847300,
               "status": "passed"
             },
             "line": 12,
@@ -144,7 +144,7 @@
           },
           {
             "result": {
-              "duration": 583764400,
+              "duration": 507955500,
               "status": "passed"
             },
             "line": 13,
@@ -176,7 +176,7 @@
         "before": [
           {
             "result": {
-              "duration": 4050662800,
+              "duration": 4100437000,
               "status": "passed"
             },
             "match": {
@@ -191,7 +191,7 @@
         "after": [
           {
             "result": {
-              "duration": 189123000,
+              "duration": 209441400,
               "status": "passed"
             },
             "match": {
@@ -204,7 +204,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3980863800,
+              "duration": 4081719400,
               "status": "passed"
             },
             "line": 5,
@@ -216,7 +216,7 @@
           },
           {
             "result": {
-              "duration": 757352000,
+              "duration": 1004028000,
               "status": "passed"
             },
             "line": 6,
@@ -228,7 +228,7 @@
           },
           {
             "result": {
-              "duration": 167250100,
+              "duration": 175852300,
               "status": "passed"
             },
             "line": 7,
@@ -240,7 +240,7 @@
           },
           {
             "result": {
-              "duration": 164499600,
+              "duration": 173539900,
               "status": "passed"
             },
             "line": 8,
@@ -272,7 +272,7 @@
         "before": [
           {
             "result": {
-              "duration": 4009974700,
+              "duration": 3784565200,
               "status": "passed"
             },
             "match": {
@@ -287,7 +287,7 @@
         "after": [
           {
             "result": {
-              "duration": 242412600,
+              "duration": 308918000,
               "status": "passed"
             },
             "match": {
@@ -300,7 +300,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3842639400,
+              "duration": 4073562100,
               "status": "passed"
             },
             "line": 5,
@@ -312,7 +312,7 @@
           },
           {
             "result": {
-              "duration": 1627374000,
+              "duration": 1598653600,
               "status": "passed"
             },
             "line": 6,
@@ -324,7 +324,7 @@
           },
           {
             "result": {
-              "duration": 154920200,
+              "duration": 131881100,
               "status": "passed"
             },
             "line": 7,
@@ -336,7 +336,7 @@
           },
           {
             "result": {
-              "duration": 59520100,
+              "duration": 67264400,
               "status": "passed"
             },
             "line": 8,
@@ -358,7 +358,7 @@
         "before": [
           {
             "result": {
-              "duration": 3992137800,
+              "duration": 4116065300,
               "status": "passed"
             },
             "match": {
@@ -373,7 +373,7 @@
         "after": [
           {
             "result": {
-              "duration": 394735200,
+              "duration": 194207500,
               "status": "passed"
             },
             "match": {
@@ -386,7 +386,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4155173700,
+              "duration": 4238423200,
               "status": "passed"
             },
             "line": 12,
@@ -398,7 +398,7 @@
           },
           {
             "result": {
-              "duration": 1505469100,
+              "duration": 1503272600,
               "status": "passed"
             },
             "line": 13,
@@ -410,7 +410,7 @@
           },
           {
             "result": {
-              "duration": 6934704300,
+              "duration": 6992079800,
               "status": "passed"
             },
             "line": 14,
@@ -422,7 +422,7 @@
           },
           {
             "result": {
-              "duration": 206793700,
+              "duration": 115000900,
               "status": "passed"
             },
             "line": 15,
@@ -444,7 +444,7 @@
         "before": [
           {
             "result": {
-              "duration": 4111569700,
+              "duration": 3935019900,
               "status": "passed"
             },
             "match": {
@@ -459,7 +459,7 @@
         "after": [
           {
             "result": {
-              "duration": 184841700,
+              "duration": 240405800,
               "status": "passed"
             },
             "match": {
@@ -472,7 +472,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3915933900,
+              "duration": 3757339900,
               "status": "passed"
             },
             "line": 19,
@@ -484,7 +484,7 @@
           },
           {
             "result": {
-              "duration": 2495535100,
+              "duration": 1444046700,
               "status": "passed"
             },
             "line": 20,
@@ -496,7 +496,7 @@
           },
           {
             "result": {
-              "duration": 7282841600,
+              "duration": 6127559100,
               "status": "passed"
             },
             "line": 21,
@@ -508,7 +508,7 @@
           },
           {
             "result": {
-              "duration": 237096600,
+              "duration": 356850000,
               "status": "passed"
             },
             "line": 22,
@@ -532,5 +532,149 @@
     "id": "loginpage",
     "keyword": "Feature",
     "uri": "LoginPage.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3704772000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.Start()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "PDP check",
+        "description": "",
+        "id": "plp;pdp-check",
+        "after": [
+          {
+            "result": {
+              "duration": 540735900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.Stop(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3717736400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Home Page",
+            "match": {
+              "location": "HomePageSteps.homePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1942014100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on \"Blouses\" PLP category",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Blouses",
+                  "offset": 12
+                }
+              ],
+              "location": "PlpPageSteps.iClickOnPLPCategory(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 409938100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I see PLP page",
+            "match": {
+              "location": "PlpPageSteps.iSeePLPPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 156850300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I see \"Add to cart\" button on product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Add to cart",
+                  "offset": 7
+                }
+              ],
+              "location": "PlpPageSteps.iSeeButtonOnProduct(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 104391000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I see \"Quick view\" button on product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Quick view",
+                  "offset": 7
+                }
+              ],
+              "location": "PlpPageSteps.iSeeButtonOnProduct(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 88115500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I see \"More\" button on product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "More",
+                  "offset": 7
+                }
+              ],
+              "location": "PlpPageSteps.iSeeButtonOnProduct(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Ready"
+          }
+        ]
+      }
+    ],
+    "name": "PLP",
+    "description": "",
+    "id": "plp",
+    "keyword": "Feature",
+    "uri": "PLP.feature"
   }
 ]

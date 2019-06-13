@@ -7,14 +7,14 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 7334152900,
+  "duration": 8292941700,
   "status": "passed"
 });
 formatter.scenario({
   "line": 4,
-  "name": "Login Page check",
+  "name": "CLP check",
   "description": "",
-  "id": "clp;login-page-check",
+  "id": "clp;clp-check",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
@@ -43,7 +43,7 @@ formatter.match({
   "location": "HomePageSteps.homePage()"
 });
 formatter.result({
-  "duration": 3923968500,
+  "duration": 4170482400,
   "status": "passed"
 });
 formatter.match({
@@ -56,18 +56,82 @@ formatter.match({
   "location": "HomePageSteps.iClickOnCategory(String)"
 });
 formatter.result({
-  "duration": 2592135000,
+  "duration": 2303999700,
   "status": "passed"
 });
 formatter.match({
   "location": "ClpPageSteps.iSeeCLPPage()"
 });
 formatter.result({
-  "duration": 58962000,
+  "duration": 1094317800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 226794900,
+  "duration": 191807300,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 3781541200,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 10,
+  "name": "Login Page check",
+  "description": "",
+  "id": "clp;login-page-check",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 9,
+      "name": "@Ready"
+    }
+  ]
+});
+formatter.step({
+  "line": 11,
+  "name": "Home Page",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 12,
+  "name": "I click on \"Tops\" sub-category",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 13,
+  "name": "I see sub-category on CLP page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "HomePageSteps.homePage()"
+});
+formatter.result({
+  "duration": 4006119100,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Tops",
+      "offset": 12
+    }
+  ],
+  "location": "HomePageSteps.iClickOnSubCategory(String)"
+});
+formatter.result({
+  "duration": 2238759900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ClpPageSteps.iSeeSubCategoryOnCLPPage()"
+});
+formatter.result({
+  "duration": 583764400,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 249218800,
   "status": "passed"
 });
 formatter.uri("HomePage.feature");
@@ -79,7 +143,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 4866469100,
+  "duration": 4050662800,
   "status": "passed"
 });
 formatter.scenario({
@@ -120,32 +184,32 @@ formatter.match({
   "location": "HomePageSteps.homePage()"
 });
 formatter.result({
-  "duration": 3426368600,
+  "duration": 3980863800,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.footerIsCorrect()"
 });
 formatter.result({
-  "duration": 556712600,
+  "duration": 757352000,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.menuIsCorrect()"
 });
 formatter.result({
-  "duration": 158572300,
+  "duration": 167250100,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.loginIsCorrect()"
 });
 formatter.result({
-  "duration": 251622900,
+  "duration": 164499600,
   "status": "passed"
 });
 formatter.after({
-  "duration": 572902100,
+  "duration": 189123000,
   "status": "passed"
 });
 formatter.uri("LoginPage.feature");
@@ -157,7 +221,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 4281782900,
+  "duration": 4009974700,
   "status": "passed"
 });
 formatter.scenario({
@@ -198,36 +262,36 @@ formatter.match({
   "location": "HomePageSteps.homePage()"
 });
 formatter.result({
-  "duration": 3793785400,
+  "duration": 3842639400,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.iNavigateToLoginPage()"
 });
 formatter.result({
-  "duration": 1406705500,
+  "duration": 1627374000,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPageSteps.iSeeCreateAnAccountForm()"
 });
 formatter.result({
-  "duration": 124333900,
+  "duration": 154920200,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPageSteps.iSeeSignInForm()"
 });
 formatter.result({
-  "duration": 63108900,
+  "duration": 59520100,
   "status": "passed"
 });
 formatter.after({
-  "duration": 341967000,
+  "duration": 242412600,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3867907800,
+  "duration": 3992137800,
   "status": "passed"
 });
 formatter.scenario({
@@ -268,36 +332,36 @@ formatter.match({
   "location": "HomePageSteps.homePage()"
 });
 formatter.result({
-  "duration": 3484183600,
+  "duration": 4155173700,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.iNavigateToLoginPage()"
 });
 formatter.result({
-  "duration": 1518361000,
+  "duration": 1505469100,
   "status": "passed"
 });
 formatter.match({
   "location": "RegistrationPageSteps.iCreateAnInvalidUser()"
 });
 formatter.result({
-  "duration": 7401719800,
+  "duration": 6934704300,
   "status": "passed"
 });
 formatter.match({
   "location": "RegistrationPageSteps.iSeeAnAlertOfInvalidUserCreation()"
 });
 formatter.result({
-  "duration": 148340500,
+  "duration": 206793700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 217525400,
+  "duration": 394735200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3663131200,
+  "duration": 4111569700,
   "status": "passed"
 });
 formatter.scenario({
@@ -338,32 +402,32 @@ formatter.match({
   "location": "HomePageSteps.homePage()"
 });
 formatter.result({
-  "duration": 3646507900,
+  "duration": 3915933900,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageSteps.iNavigateToLoginPage()"
 });
 formatter.result({
-  "duration": 1387679100,
+  "duration": 2495535100,
   "status": "passed"
 });
 formatter.match({
   "location": "RegistrationPageSteps.iCreateValidUser()"
 });
 formatter.result({
-  "duration": 7825369200,
+  "duration": 7282841600,
   "status": "passed"
 });
 formatter.match({
   "location": "MyAccountPageSteps.iSeeMyAccount()"
 });
 formatter.result({
-  "duration": 435760900,
+  "duration": 237096600,
   "status": "passed"
 });
 formatter.after({
-  "duration": 185205400,
+  "duration": 184841700,
   "status": "passed"
 });
 });

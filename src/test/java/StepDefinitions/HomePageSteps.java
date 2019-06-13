@@ -1,6 +1,7 @@
 package StepDefinitions;
 
 import Methods.ScrollToElement;
+import locator.XPBreadcrumbs;
 import locator.XPFooter;
 import locator.XPHeader;
 import Configuration.Params;
@@ -12,6 +13,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import locator.XPMenu;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import static locator.idObjects.*;
 
@@ -98,14 +101,35 @@ public class HomePageSteps {
     public void iClickOnCategory(String arg0){
         if (arg0.equals("Women")) {
             driver.findElement(By.xpath(XPMenu.Menu1)).click();
+            driver.findElement(By.xpath(XPBreadcrumbs.Women)).isDisplayed();
 
         }
         else if (arg0.equals("Dresses")) {
             driver.findElement(By.xpath(XPMenu.Menu2)).click();
+            driver.findElement(By.xpath(XPMenu.CategoryBlockDresses)).isDisplayed();
         }
         else {
             Assert.fail("Error - wrong category");
         }
 
+    }
+
+    @When("^I click on \"([^\"]*)\" sub-category$")
+    public void iClickOnSubCategory(String arg0) throws Throwable {
+        if (arg0.equals("Tops")) {
+            Actions action = new Actions(driver);
+            WebElement over = driver.findElement(By.xpath(XPMenu.Menu1));
+            action.moveToElement(over).perform();
+            driver.findElement(By.xpath(XPMenu.Menu1Sub1)).click();
+        }
+        else if (arg0.equals("Dresses")) {
+            Actions action = new Actions(driver);
+            WebElement over = driver.findElement(By.xpath(XPMenu.Menu1));
+            action.moveToElement(over).perform();
+            driver.findElement(By.xpath(XPMenu.Menu1Sub2)).click();
+        }
+        else {
+            Assert.fail("Error - wrong sub-category");
+        }
     }
 }

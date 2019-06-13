@@ -32,5 +32,25 @@ public class idObjects {
     public static String InputState = "id_state";
     public static String SubmitNewAccount = "submitAccount";
 
+    public static String ViewGrid = "grid";
+    public static String ViewList = "list";
+    public static String ProductSorting = "selectProductSort";
+
+    public static String FilteringSizeS = "layered_id_attribute_group_1";
+    public static String FilteringSizeM = "layered_id_attribute_group_3";
+    public static String FilteringSizeL = "layered_id_attribute_group_2";
+
+    public static String FilteringColorBeige = "layered_id_attribute_group_7";
+    public static String FilteringColorBlack = "layered_id_attribute_group_11";
+    public static String FilteringColorBlue = "layered_id_attribute_group_14";
+    public static String FilteringColorYellow = "layered_id_attribute_group_16";
+    public static String FilteringColorWhite = "layered_id_attribute_group_8";
+    public static String FilteringColorOrange = "layered_id_attribute_group_13";
+    public static String FilteringColorGreen = "layered_id_attribute_group_15";
+    public static String FilteringColorPink = "layered_id_attribute_group_24";
+
+    public static String FilteringCompositionCotton = "layered_id_feature_5";
+    public static String FilteringCompositionViscose = "layered_id_feature_3";
+    public static String FilteringCompositionPolyester = "layered_id_feature_1";
 
 }
